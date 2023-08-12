@@ -1,4 +1,3 @@
-extends common/app-sidebar-white.pug
 html
   include common/app-head.pug
   +head("Vagas")  
@@ -14,10 +13,11 @@ html
           //- JWT that identifies this user:
           div(hidden, id="token", data-token=token)
           // Exclude pills navigation so far
-          //-.max-w-7xl.mx-auto.px-2.sm_px-6.md_px-8.mt-8
+          -.max-w-7xl.mx-auto.px-2.sm_px-6.md_px-8.mt-8
             .bg-white.px-2.py-1.sm_px-6.lg_px-8.border.rounded-md.border-indigo-300
               include common/tab-pills.pug
               +tab_pills()
+          include common/app-sidebar-white.pug
           .max-w-full.mx-auto
             //  Replace with your content 
             //iframe(src="https://app.superblocks.com/applications/5f366867-139f-4788-aaa8-10cd010d6ed4/pages/a9ac6965-7643-4bd3-a821-d2f8be701240?otc=" + otc, width="100%", height="100%")

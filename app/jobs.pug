@@ -1,0 +1,11 @@
+block head
+  include common/app-head.pug
+  +head(title)
+
+block page_content
+  iframe(width='100%', frameborder='0', height='100%', src="https://baserow.io/public/gallery/7zfwnAjMzUen6FuJygy6DXe9uVJavTsk-Hb5CpQlYwI")
+
+block footer
+  script(src='https://cdn.jsdelivr.net/npm/apexcharts')
+  script(src=asset('app/js/charts-demo.js'))
+
